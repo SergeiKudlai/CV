@@ -48,7 +48,7 @@ function createPhoneNumber(numbers) {
 ***
 
 ## My work
-[https://github.com/SergeiKudlai/freshok.git][Freshok]
+https://github.com/SergeiKudlai/freshok.git
 ***
 
 ## Education

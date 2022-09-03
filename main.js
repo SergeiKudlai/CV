@@ -1,7 +1,7 @@
 const scaleTraning = document.querySelectorAll('.scale__traning');
 const scaleText = document.querySelectorAll('.scale__text');
-const btnPrev = document.querySelectorAll('.btn__prev');
-const btnNext = document.querySelectorAll('.btn__next');
+const btnPrev = document.querySelectorAll('.scale__btn--prev');
+const btnNext = document.querySelectorAll('.scale__btn--next');
 const scale = document.querySelector('.scale');
 
 class CounterScale {

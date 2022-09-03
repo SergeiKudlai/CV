@@ -41,10 +41,10 @@
   background-color: var(--blue);
 }
 
-.btn__prev::before {
+.scale__btn--prev::before {
   background-image: url(../img/icon/minus.png);
 }
 
-.btn__next::before {
+.scale__btn--next::before {
   background-image: url(../img/icon/plus.png);
 }

@@ -1,6 +1,7 @@
 @import url(./assets/css/footer.css);
 @import url(./assets/css/about.css);
 @import url(./assets/css/skills.css);
+@import url(./assets/css/examples.css);
 
 @font-face {
   font-family: 'Roboto';
@@ -66,7 +67,9 @@ h5,
 h6,
 label,
 blockquote,
-cite {
+cite,
+pre,
+code {
   font: inherit;
   margin: 0;
   padding: 0;
@@ -145,7 +148,7 @@ textarea {
   margin-bottom: 1.5rem;
 }
 
-.btn {
+.scale__btn {
   padding: 0.5rem;
   width: 5rem;
   height: 4rem;
@@ -155,7 +158,7 @@ textarea {
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn::before {
+.scale__btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -167,13 +170,14 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.btn:hover {
+.scale__btn:hover {
   background-color: var(--color-title--about);
 }
 
 .header,
 .contacts,
-.main__inner {
+.main__inner,
+.examples {
   margin-bottom: 3rem;
 }
 
@@ -188,6 +192,8 @@ textarea {
   --color-title--about: #f6c1a4;
   --color-title--skills: #4809ff;
   --text-scale: #00ffff;
+  --white-700: #f0f8ff;
+  --red-500: #ff0000;
 }
 
 .header {

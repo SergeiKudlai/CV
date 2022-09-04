@@ -1,0 +1,51 @@
+.footer {
+  background-color: var(--bg_color);
+}
+
+.footer__container {
+  position: relative;
+}
+
+.footer__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 15%);
+  width: 30%;
+  height: 100%;
+  background: url(../img/frontend.jpg)no-repeat center/cover;
+}
+
+.footer__inner {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__item {
+  text-align: center;
+}
+
+.footer__link {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer__link:hover {
+  opacity: 0.5;
+}
+
+.footer__link--github {
+  background-image: url("../img/icon/github.png");
+}
+
+.footer__link--rsschool {
+  background-image: url("../img/icon/rs_school_js.svg");
+  background-size: auto;
+}

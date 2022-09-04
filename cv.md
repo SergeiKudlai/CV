@@ -1,6 +1,6 @@
 # **Kudlai Sergei**
 ***
-![My Photo](./my_foto.JPG "My Photo")
+![My Photo](./assets/img/my_foto.JPG "My Photo")
 
 ***
 1. Сontacts

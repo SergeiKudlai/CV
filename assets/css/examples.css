@@ -1,0 +1,18 @@
+.examples__title {
+  border-bottom: 1px solid var(--red-500);
+}
+
+.examples__inner {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white-700);
+  border-radius: 5px;
+}
+
+.examples__items {
+  flex: 1 1 50%;
+}
+
+.examples__items:not(:last-child) {
+  border-right: 1px solid black;
+}

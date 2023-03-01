@@ -1,7 +1,0 @@
-.about {
-  flex: 1 1 50%;
-}
-
-.about__title {
-  border-bottom: 1px solid var(--color-title--about);
-}

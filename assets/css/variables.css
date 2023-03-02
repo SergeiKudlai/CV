@@ -1,0 +1,14 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ff0000;
+    --blue: #0000ff;
+    --bg_color: #00000012;
+    --green: #008000;
+    --pos-icon: calc(50% - 1.5rem);
+    --color-title--about: #f6c1a4;
+    --color-title--skills: #4809ff;
+    --text-scale: #00ffff;
+    --white-700: #f0f8ff;
+    --red-500: #ff0000;
+}

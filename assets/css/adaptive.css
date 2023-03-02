@@ -1,0 +1,80 @@
+@media (max-width: 992px) {
+    .main__inner {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .header__container {
+        padding-top: 12.5rem;
+    }
+
+    .header__top {
+        flex-direction: column;
+    }
+
+    .examples__inner {
+        flex-direction: column;
+    }
+
+    .examples__items:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__list {
+        align-items: center;
+        row-gap: 1rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        margin-bottom: 2.5rem;
+        font-size: 1.4rem;
+    }
+
+    .header,
+    .contacts,
+    .main__inner,
+    .examples {
+        margin-bottom: 3rem;
+    }
+
+    .header__link {
+        font-size: 1.4rem;
+    }
+
+    .contacts__list {
+        display: grid;
+        grid-template-areas: "top top"
+            "bottom bottom";
+        font-size: 1.2rem;
+        gap: 2rem;
+        justify-content: stretch;
+    }
+
+    .scale__text {
+        font-size: 1.2rem;
+    }
+
+    .scale__btn {
+        height: 3rem;
+    }
+
+    .examples__inner {
+        font-size: 9px;
+    }
+
+    .education__text,
+    .language__text,
+    .about__text {
+        font-size: 1.2rem;
+    }
+
+    .footer__item-year {
+        font-size: 1.2rem;
+    }
+}

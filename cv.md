@@ -10,49 +10,52 @@
   4. Discord : s.kudlai (sergeikudlai)#0774
 ***
 ## About me 
-My name is Sergey, I'm 30 years old, my goal is to become a senior FrontEnd developer. 
-
-Of my strengths, I want to emphasize *purposefulness*, *punctuality*, *responsibility*, after completing the layout courses I made projects for my friends and took a couple of freelance orders, but over time I realized that my knowledge was not enough and I should strive to further discover distant shores and learn programming languages ​​and become a master of my own affairs
+My name is Sergey, I'm 30 years old.I live in the country of Belarus, the city of Minsk. I have higher technical education. My goal is to become a senior Front-End developer. From my strengths, I would like to single out purposefulness, punctuality and responsibility. After I finished courses on typesetting I made projects for my friends and took some freelance jobs, but eventually realized that my knowledge is not enough and I need to keep exploring distant shores and learn programming languages to become a master of my craft. At the moment I'm studying React
 ***
 ## My skills
-I study JavaScript, had experience with HTML, CSS, SCSS, jQuery, GULP, Bootstrap, in my work I used the BEM methodology for naming classes.
+I have experience with HTML, CSS, SCSS, jQuery, GULP, Webpack, Bootstrap, TypeScript, JavaScript, Git/GitHub, Figma in my work I used the BEM methodology.
 ***
 
 ## JavaScript examples
 ```
-function createPhoneNumber(numbers) {
-  let num1 = '';
-  let num2 = '';
-  let num3 = '';
+function nextBigger(n) {
+  const digits = n.toString().split('').reverse();
 
-  numbers.forEach((value, index) => {
 
-    if (index === 0 || index === 1 || index === 2) {
-      num1 += value;
-    }
+  for (let i = 0; i < digits.length; i++) {
+    if (digits[i] >= digits[i - 1]) continue;
 
-    if (index === 3 || index === 4 || index === 5) {
-      num2 += value;
-    }
+    const temp = digits[i];
+    const index = digits.slice(0, i).findIndex((n) => n > temp);
 
-    if (index === 6 || index === 7 || index === 8 || index === 9) {
-      num3 += value;
-    }
-  });
+    if (index === -1) continue;
 
-  const result = `${num1}) ${num2}-${num3}`
+    digits[i] = digits[index];
+    digits[index] = temp;
 
-  return result;
+    return +digits
+      .slice(0, i)
+      .sort((a, b) => b - a)
+      .concat(digits.slice(i))
+      .reverse()
+      .join('');
+  }
+
+  return -1;
 }
 ```
 ***
 
 ## My work
-https://github.com/SergeiKudlai/freshok.git
+https://rolling-scopes-school.github.io/sergeikudlai-JSFE2022Q3/songbird/
+
+https://rolling-scopes-school.github.io/sergeikudlai-JSFE2022Q3/gem-puzzle/
+
+https://sergeikudlai.github.io/online-store/
 ***
 
 ## Education
-Completed courses in layout. Passed part of the simulators at HTML Academy, also took free courses on FrontEnd development on different platforms more than once.
+Completed courses in layout, simulators at HTML Academy, also repeatedly took free courses in Front-End development on different platforms. In 2023 I took Front-end 2022Q3 RS School course and continue studying at this school on React 2023 Q1 course.
 
 ## English language
-A-1, A-2 self-education, today I do my best to strengthen knowledge in English
+A-2 (self-study), I improve my level of English through daily practice and classes with a teache

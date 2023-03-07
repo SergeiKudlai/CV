@@ -3,7 +3,7 @@ const scaleText = document.querySelectorAll('.scale__text');
 const btnPrev = document.querySelectorAll('.scale__btn--prev');
 const btnNext = document.querySelectorAll('.scale__btn--next');
 const scale = document.querySelector('.scale');
-const workLink = document.querySelector('.works__link');
+const workLinks = document.querySelectorAll('.works__link');
 const colors = ['green', 'red', 'slateblue', 'blue', 'salmon'];
 
 class CounterScale {
@@ -52,9 +52,15 @@ for (let i = 0; i < btnPrev.length; i++) {
 }
 
 
-const getColorsText = () => {
-  const num = Math.trunc(Math.random() * 5);
-  workLink.style.color = colors[num];
+const COLOR_PALETTE = '0123456789ABCDEF';
+
+function getRandomColorCars() {
+  let resultColor = '#';
+  for (let i = 0; i < 6; i++) {
+    resultColor += COLOR_PALETTE[Math.floor(Math.random() * COLOR_PALETTE.length)];
+  }
+  
+  Array(...workLinks).map((value) => value.style.color = resultColor);
 }
 
-setInterval(getColorsText, 2000);
+setInterval(getRandomColorCars, 5000);

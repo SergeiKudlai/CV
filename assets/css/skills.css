@@ -20,6 +20,10 @@
   column-gap: 0.5rem;
 }
 
+.scale__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 .scale__container {
   background-color: gray;
   flex: 1 1 auto;

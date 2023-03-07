@@ -1,185 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/img/fav_icon.jpg" />
+    <script src="./main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./assets/img/fav_icon.jpg">
-  <script src="./main.js" defer></script>
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <h1 class="sr-only">front-end developer</h1>
 
-<body>
-  <div class="wrapper">
+          <div class="header__top">
+            <img
+              class="header__foto"
+              src="./assets/img/my_foto.JPG"
+              alt="Sergei Kudlai"
+              height="300"
+              width="200"
+            />
 
-    <header class="header">
-      <div class="header__container container">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="#contacts">Contacts</a>
+                </li>
 
-        <h1 class="sr-only">front-end developer</h1>
+                <li class="header__item">
+                  <a class="header__link" href="#about">About me</a>
+                </li>
 
-        <div class="header__top">
+                <li class="header__item">
+                  <a class="header__link" href="#skills">My Skills</a>
+                </li>
 
-          <img class="header__foto" src="./assets/img/my_foto.JPG" alt="Sergei Kudlai" height="300" width="200">
+                <li class="header__item">
+                  <a class="header__link" href="#examples"
+                    >JavaScript examples</a
+                  >
+                </li>
 
-          <nav class="header__nav">
-
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link" href="#contacts">Contacts</a>
-              </li>
-
-              <li class="header__item">
-                <a class="header__link" href="#about">About me</a>
-              </li>
-
-              <li class="header__item">
-                <a class="header__link" href="#skills">My Skills</a>
-              </li>
-
-              <li class="header__item">
-                <a class="header__link" href="#examples">JavaScript examples</a>
-              </li>
-
-              <li class="header__item">
-                <a class="header__link" href="#works">My work</a>
-              </li>
-            </ul>
-
-          </nav>
-        </div>
-
-
-      </div>
-    </header>
-
-    <main class="main">
-
-      <section class="contacts" id="contacts">
-        <div class="contacts__container container">
-          <h2 class="contacts__title title">Contacts</h2>
-
-          <ul class="contacts__list">
-            <li class="contacts__item contacts__item--telegram">
-              <a class="contacts__link" href="https://t.me/Kudlai_Sergei" target="_blank">Telegram</a>
-            </li>
-
-            <li class="contacts__item contacts__item--email">
-              <a class="contacts__link" href="mailto:s.kudlai@mail.ru" target="_blank">s.kudlai@mail.ru</a>
-            </li>
-
-            <li class="contacts__item contacts__item--phone">
-              <a class="contacts__link" href="tel:+375298735743" target="_blank">+37529 873-57-43</a>
-            </li>
-
-            <li class="contacts__item contacts__item--vk">
-              <a class="contacts__link" href="https://vk.com/ids.kudlai" target="_blank">VContacte</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="main__inner container">
-        <section class="about" id="about">
-          <div class="about__container">
-
-            <h2 class="about__title title">About</h2>
-
-            <p class="about__text">
-              My name is Sergey, I'm 30 years old, my goal is to become a senior FrontEnd developer.
-
-              Of my strengths, I want to emphasize purposefulness, punctuality, responsibility, after completing the
-              layout courses I made projects for my friends and took a couple of freelance orders, but over time I
-              realized that my knowledge was not enough and I should strive to further discover distant shores and learn
-              programming languages ​​and become a master of my own affairs
-            </p>
-
+                <li class="header__item">
+                  <a class="header__link" href="#works">My work</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </section>
+        </div>
+      </header>
 
-        <section class="skills" id="skills">
+      <main class="main">
+        <section class="contacts" id="contacts">
+          <div class="contacts__container container">
+            <h2 class="contacts__title title">Contacts</h2>
 
-          <div class="skills__container">
-
-            <h2 class="skills__title title">Skills</h2>
-
-            <ul class="skills__inner scale">
-              <li class="scale__item">
-
-                <h3 class="scale__title">TypeScript</h3>
-
-                <div class="scale__inner">
-                  <button class="scale__btn scale__btn--prev" type="button"></button>
-
-                  <div class="scale__container">
-                    <span class="scale__text"></span>
-                    <span class="scale__traning" style="width: 70%"></span>
-                  </div>
-
-                  <button class="scale__btn scale__btn--next" type="button"></button>
-                </div>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--telegram">
+                <a
+                  class="contacts__link"
+                  href="https://t.me/Kudlai_Sergei"
+                  target="_blank"
+                  >Telegram</a
+                >
               </li>
 
-              <li class="scale__item">
-
-                <h3 class="scale__title">JavaScript</h3>
-
-                <div class="scale__inner">
-                  <button class="scale__btn scale__btn--prev" type="button"></button>
-
-                  <div class="scale__container">
-                    <span class="scale__text"></span>
-                    <span class="scale__traning" style="width: 80%"></span>
-                  </div>
-
-                  <button class="scale__btn scale__btn--next" type="button"></button>
-                </div>
+              <li class="contacts__item contacts__item--email">
+                <a
+                  class="contacts__link"
+                  href="mailto:s.kudlai@mail.ru"
+                  target="_blank"
+                  >s.kudlai@mail.ru</a
+                >
               </li>
 
-              <li class="scale__item">
-
-                <h3 class="scale__title">HTML</h3>
-
-                <div class="scale__inner">
-                  <button class="scale__btn scale__btn--prev" type="button"></button>
-
-                  <div class="scale__container">
-                    <span class="scale__text"></span>
-                    <span class="scale__traning" style="width: 90%"></span>
-                  </div>
-
-                  <button class="scale__btn scale__btn--next" type="button"></button>
-                </div>
+              <li class="contacts__item contacts__item--phone">
+                <a
+                  class="contacts__link"
+                  href="tel:+375298735743"
+                  target="_blank"
+                  >+37529 873-57-43</a
+                >
               </li>
 
-              <li class="scale__item">
-
-                <h3 class="scale__title">CSS</h3>
-
-                <div class="scale__inner">
-                  <button class="scale__btn scale__btn--prev" type="button"></button>
-
-                  <div class="scale__container">
-                    <span class="scale__text"></span>
-                    <span class="scale__traning" style="width: 90%"></span>
-                  </div>
-
-                  <button class="scale__btn scale__btn--next" type="button"></button>
-                </div>
+              <li class="contacts__item contacts__item--vk">
+                <a
+                  class="contacts__link"
+                  href="https://vk.com/ids.kudlai"
+                  target="_blank"
+                  >VContacte</a
+                >
               </li>
             </ul>
           </div>
         </section>
-      </div>
 
-      <section class="examples" id="examples">
-        <div class="examples__containers container">
-          <h2 class="examples__title title">Examples</h2>
+        <div class="main__inner container">
+          <section class="about" id="about">
+            <div class="about__container">
+              <h2 class="about__title title">About</h2>
 
-          <ul class="examples__inner">
-            <li class="examples__items">
-              <pre><code class="examples__code">
+              <p class="about__text">
+                My name is Sergey, I am 30 years old. I live in the country of
+                Belarus, the city of Minsk. I have higher technical education.
+                My goal is to become a senior Front-End developer. From my
+                strengths, I would like to single out purposefulness,
+                punctuality and responsibility. After I finished courses on
+                typesetting I made projects for my friends and took some
+                freelance jobs, but eventually realized that my knowledge is not
+                enough and I need to keep exploring distant shores and learn
+                programming languages to become a master of my craft. At the
+                moment I'm studying React
+              </p>
+            </div>
+          </section>
+
+          <section class="skills" id="skills">
+            <div class="skills__container">
+              <h2 class="skills__title title">Skills</h2>
+
+              <ul class="skills__inner scale">
+                <li class="scale__item">
+                  <h3 class="scale__title">TypeScript</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 70%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+
+                <li class="scale__item">
+                  <h3 class="scale__title">JavaScript</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 80%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+
+                <li class="scale__item">
+                  <h3 class="scale__title">HTML</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 90%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+
+                <li class="scale__item">
+                  <h3 class="scale__title">Webpack</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 90%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+
+                <li class="scale__item">
+                  <h3 class="scale__title">CSS/SCSS</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 90%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+
+                <li class="scale__item">
+                  <h3 class="scale__title">Git/GitHub</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 85%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+
+                <li class="scale__item">
+                  <h3 class="scale__title">Figma</h3>
+
+                  <div class="scale__inner">
+                    <button
+                      class="scale__btn scale__btn--prev"
+                      type="button"
+                    ></button>
+
+                    <div class="scale__container">
+                      <span class="scale__text"></span>
+                      <span class="scale__traning" style="width: 75%"></span>
+                    </div>
+
+                    <button
+                      class="scale__btn scale__btn--next"
+                      type="button"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <section class="examples" id="examples">
+          <div class="examples__containers container">
+            <h2 class="examples__title title">Examples</h2>
+
+            <ul class="examples__inner">
+              <li class="examples__items">
+                <pre><code class="examples__code">
                 function createPhoneNumber(numbers) {
                   let num1 = '';
                   let num2 = '';
@@ -205,10 +307,10 @@
                   return result;
                 }
               </code></pre>
-            </li>
+              </li>
 
-            <li class="examples__items">
-              <pre><code class="examples__code">
+              <li class="examples__items">
+                <pre><code class="examples__code">
                 function nextBigger(n) {
                   const digits = n.toString().split('').reverse();
                 
@@ -234,68 +336,94 @@
                 
                   return -1}; 
               </code></pre>
-            </li>
-          </ul>
-
-        </div>
-      </section>
-
-      <div class="main__inner container">
-        <section class="works section" id="works">
-          <div class="works__container container">
-            <h2 class="works__title title">My Works</h2>
-
-            <ul class="works__inner">
-              <li class="works__item">
-                <a class="works__link" href="https://github.com/SergeiKudlai/freshok.git" target="_blank">Freshok</a>
               </li>
             </ul>
-
           </div>
         </section>
 
-        <section class="education section" id="education">
-          <h2 class="education__title title">Education</h2>
+        <div class="main__inner container">
+          <section class="works section" id="works">
+            <div class="works__container container">
+              <h2 class="works__title title">My Works</h2>
 
-          <p class="education__text">
-            Completed courses in layout. Passed part of the simulators at HTML Academy, also took free courses on
-            FrontEnd development on different platforms more than once.
-          </p>
+              <ul class="works__inner">
+                <li class="works__item">
+                  <a
+                    class="works__link"
+                    href="https://rolling-scopes-school.github.io/sergeikudlai-JSFE2022Q3/songbird/"
+                    target="_blank"
+                    >songbird
+                  </a>
+                </li>
 
-        </section>
+                <li class="works__item">
+                  <a
+                    class="works__link"
+                    href="https://rolling-scopes-school.github.io/sergeikudlai-JSFE2022Q3/gem-puzzle/"
+                    target="_blank"
+                    >gem-puzzle
+                  </a>
+                </li>
 
-        <section class="language section">
-          <h2 class="language__title title">English language</h2>
+                <li class="works__item">
+                  <a
+                    class="works__link"
+                    href="https://sergeikudlai.github.io/online-store/"
+                    target="_blank"
+                    >online-store
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-          <p class="language__text">
-            A-1, A-2 self-education, today I do my best to strengthen knowledge in English
-          </p>
+          <section class="education section" id="education">
+            <h2 class="education__title title">Education</h2>
 
-        </section>
-      </div>
+            <p class="education__text">
+              Completed courses in layout, simulators at HTML Academy, also
+              repeatedly took free courses in Front-End development on different
+              platforms. In 2023 I took Front-end 2022Q3 RS School course and
+              continue studying at this school on React 2023 Q1 course.
+            </p>
+          </section>
 
-    </main>
+          <section class="language section">
+            <h2 class="language__title title">English language</h2>
+
+            <p class="language__text">
+              A-2 (self-study), I improve my level of English through daily
+              practice and classes with a teacher
+            </p>
+          </section>
+        </div>
+      </main>
 
       <footer class="footer">
-      <h2 class="sr-only">front-End developer</h2>
+        <h2 class="sr-only">front-End developer</h2>
 
-      <div class="footer__container container">
-        <ul class="footer__inner">
-          <li class="footer__item">
-            <a class="footer__link footer__link--rsschool" href="https://rs.school/js/" target="_blank"></a>
-          </li>
+        <div class="footer__container container">
+          <ul class="footer__inner">
+            <li class="footer__item">
+              <a
+                class="footer__link footer__link--rsschool"
+                href="https://rs.school/js/"
+                target="_blank"
+              ></a>
+            </li>
 
-          <li class="footer__item">
-            <a class="footer__link footer__link--github"
-              href="https://github.com/SergeiKudlai/rsschool-cv/tree/rsschool-cv-html" target="_blank"></a>
+            <li class="footer__item">
+              <a
+                class="footer__link footer__link--github"
+                href="https://github.com/SergeiKudlai/rsschool-cv/tree/rsschool-cv-html"
+                target="_blank"
+              ></a>
 
-            <span class="footer__item-year">2023</span>
-          </li>
-        </ul>
-      </div>
-    </footer>
-
-  </div>
-</body>
-
+              <span class="footer__item-year">2023</span>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -52,6 +52,8 @@ https://rolling-scopes-school.github.io/sergeikudlai-JSFE2022Q3/songbird/
 https://rolling-scopes-school.github.io/sergeikudlai-JSFE2022Q3/gem-puzzle/
 
 https://sergeikudlai.github.io/online-store/
+
+https://exquisite-boba-03dbc0.netlify.app/
 ***
 
 ## Education
